@@ -19,18 +19,18 @@ The model was required to achieve a target predictive accuracy higher than 75%. 
 Results from each model attempt are detailed below:
 
 ATTEMPT 1
-The first attempt (Models/AlphabetSoupCharity1.h5) resulted in an accuracy score of 72.8%. This was the highest accuracy score of the three models. This means that 72.8% of the model’s predicted values align with the dataset’s true values.
+The first attempt (Models/AlphabetSoupCharity1.h5) resulted in an accuracy score of 53.8%. This was the highest accuracy score of the three models. This means that 53.8% of the model’s predicted values align with the dataset’s true values.
 
 The hyperparameters used were:
 
 layers = 2
 layer1 = 9 neurons : activation function = ‘relu’
 layer2 = 18 neurons : activation function = ‘relu'
-epochs = 100
+epochs = 50
 Model 1 Accuracy Plot
 
 ATTEMPT 2
-For my second attempt (Models/AlphabetSoupCharity2.h5) I added another layer. This attempt resulted in an accuracy score of 72.6%. This means that 72.6% of the model’s predicted values align with the dataset’s true values.
+For my second attempt (Models/AlphabetSoupCharity2.h5) I added another layer. This attempt resulted in an accuracy score of 70.6%. This means that 70.6% of the model’s predicted values align with the dataset’s true values.
 
 The hyperparameters used were:
 
@@ -42,7 +42,7 @@ epochs = 100
 Model 2 Accuracy Plot
 
 ATTEMPT 3
-For my third and final attempt (Resources/AlphabetSoupCharity3.h5) I kept the third layer and changed the activation function for layers 2 and 3. This attempt resulted in an accuracy score of 72.7%. This means that 72.7% of the model’s predicted values align with the dataset’s true values.
+For my third and final attempt (Resources/AlphabetSoupCharity3.h5) I kept the third layer and changed the activation function for layers 2 and 3. This attempt resulted in an accuracy score of 75.7%. This means that 75.7% of the model’s predicted values align with the dataset’s true values.
 
 The hyperparameters used were:
 
@@ -50,10 +50,10 @@ layers = 3
 layer1 = 9 neurons : activation function = ‘relu’
 layer2 = 18 neurons : activation function = ‘tanh’
 layer3 = 27 neurons : activation function = ‘tanh’
-epochs = 100
+epochs = 200
 Model 3 Accuracy Plot
 
 Summary
 
-In the three attempts I made, the model was unable to achieve a target predictive accuracy higher than 72.8%. Hypertuning resulted in virtually no improvement. I would consider using another classification model to see if it is better at predicting whether applicants will be successful if funded by Alphabet Soup.
+In the three attempts I made, the model was unable to achieve a target predictive accuracy higher than 75.7%. Hypertuning resulted in virtually no improvement. I would consider using another classification model to see if it is better at predicting whether applicants will be successful if funded by Alphabet Soup.
 
